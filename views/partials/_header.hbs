@@ -1,0 +1,55 @@
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section ">
+      <div class="header_top "  >
+        <div class="container-fluid">
+          <div class="top_nav_container">
+            <div class="contact_nav">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call :(+233) 24 729 4402
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Email : richardb@gmail.com
+                </span>
+              </a>
+            </div>
+            <from class="search_form">
+              <input type="text" class="form-control" placeholder="Search here...">
+              <button class="" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </from>
+            <div class="user_option_box">
+               {{#if name}}
+              <a href="/logout" class="account-link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>
+                  {{name}} 
+                </span>
+              </a>
+              <span ><a href="/auth/logout">Logout</a></span>
+              {{else}}
+              <a href="/signin" class="account-link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>
+                  Login
+                </span>
+              </a>
+               {{/if}}
+
+              <a href="" class="cart-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>
+                  Cart
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
